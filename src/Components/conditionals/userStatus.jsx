@@ -31,3 +31,20 @@ export const userstatus = () => {
         </div>
     )
 }
+
+
+// function Multiplication(a,b){
+//     // if(loginStatus){
+//     //     console.log('user logged in');
+//     // } else{
+//     //     console.log('please login first');
+//     // }
+//     // return 'done with evaluation'
+//     if(!a){
+//         console.log('please pass parameters');
+//     }
+//     return a*b
+// }
+
+// console.log(Multiplication(12,34)); //200 - 100
+// console.log(Multiplication()); //
