@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+// import React, { Fragment } from "react";
 
 function Searchbar(){
   return(
@@ -22,8 +22,8 @@ export default Searchbar;
 
 // why-->
 // because react doesnt allow multiple element to be returned in from a component
- // we en up rendering extra html in the dom for wrapping multiple element
- // this going to hit performance and size in longer ruhence we use fragments
+//  we en up rendering extra html in the dom for wrapping multiple element
+//  this going to hit performance and size in longer ruhence we use fragments
 // default named export i use 
 
 // Fragments

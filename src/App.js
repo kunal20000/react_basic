@@ -1,16 +1,15 @@
 
 import React from 'react';
 import './App.css';
-import Searchbar from './component/SearchBar';
+import {Searchbar} from './Components/component/SearchBar';
 import { logo } from './component/Logo';
-import { PersonList } from './component/PersonList';
+import { PersonList } from './Components/component/PersonList';
 import Person from './Components/ClassComponentEx/Person';
 import {Footer} from './Components/component/Footer';
 import { Header } from './Components/component/Header';
+
 function App(){
-
-
-  const warning = true;
+   const warning = true;
    // let bgClass = '';
 
    // if(warning){
@@ -19,14 +18,14 @@ function App(){
    //   bgClass = 'dark'
    // }
   return(
-   <div className={`App ${ warning ? 'warning' : 'dark'}`}>
-     
-     <Searchbar/>
-     <PersonList/>
-     <logo/>
-     <Person/>
-     <Footer/>
-     <Header/>
+    <div className={`App ${ warning ? 'warning' : 'dark'}`}>
+    
+     <Searchbar />
+     <PersonList />
+     <logo />
+     <Person />
+     <Footer />
+     <Header />
    </div>
   
    
