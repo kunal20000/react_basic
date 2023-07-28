@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export const prevState = ()=>{
+export const PrevState = ()=>{
     const[count, getCount] = useState(0);
 
     const increment = ()=>{

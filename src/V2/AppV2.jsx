@@ -1,16 +1,19 @@
-import { Header } from "./components/composition/Header";
+import  {Header}  from "./Compnents/composition/Header";
 import "./AppV2.css";
-import { Footer } from "./components/helpAndFeedback/Footer";
-import { Feedback } from "./components/helpAndFeedback/Feedback";
-import { Name } from "./components/states/Name";
-import { UserInfo } from "./components/states/UserInfo";
-import { Counter } from "./components/states/Counter";
-import { PrevState } from "./components/states/PrevState";
-import { AsyncStateEx } from "./components/states/AsyncStateEx";
-import { LoginForm } from "./components/form/LoginForm";
-import { SignUp } from "./components/form/SignUp";
-import { GetUSerInfo } from "./components/form/GetUserInfo";
-export const AppV2 = () => {
+
+// import { Footer } from "./Compnents/helpAndFeedback/Footer";
+// import { Feedback } from "./Compnents/helpAndFeedback/Feedback";
+
+import { Name } from "./Compnents/states/Name";
+import { UserInfo } from "./Compnents/states/UserInfo";
+import { Counter } from "./Compnents/states/Counter";
+import { PrevState } from "./Compnents/states/PrevState";
+import { AsyncStateEx } from "./Compnents/states/AsyncState";
+import { LoginForm } from "./Compnents/Form/LoginForm";
+import { SignUp } from "./Compnents/Form/SignUp";
+import { GetUSerInfo } from "./Compnents/Form/GetUserInfo";
+
+export const App = () => {
   return (
     <main>
       <Header theme={"dark"} device={"mobile"}logoDesign={'square'}>
@@ -21,10 +24,11 @@ export const AppV2 = () => {
         </div>
       </Header>
 
-      {/* <Header  device={"mobile"} logoDesign={"circular"}/> */}
-      {/* <Footer/> */}
-      {/* <Feedback/> */}
+      <Header  device={"mobile"} logoDesign={"circular"}/> 
+      {/* <Footer/>
+      <Feedback/> */}
       <br />
+
       {/* <Header theme={"dark"}  >
         <ul>
           <li>
@@ -39,16 +43,16 @@ export const AppV2 = () => {
         </ul>
       </Header> */}
 
-      {/* <Name/> */}
-      {/* <UserInfo/> */}
-      {/* <Counter/> */}
-      {/* <PrevState/> */}
-      {/* <AsyncStateEx/> */}
+      <Name/>
+      <UserInfo/>
+      <Counter/>
+      <PrevState/>
+      <AsyncStateEx/>
 
       {/* forms */}
 
-      {/* <LoginForm/> */}
-      {/* <SignUp/> */}
+      <LoginForm/>
+      <SignUp/>
       
       <GetUSerInfo/>
     </main>

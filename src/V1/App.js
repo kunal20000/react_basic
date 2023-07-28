@@ -1,9 +1,9 @@
 
 import React from 'react';
 import './App.css';
-import {Searchbar} from './Components/component/SearchBar';
+import SearchBar from "./components/SearchBar";
 import { logo } from './component/Logo';
-import { PersonList } from './Components/component/PersonList';
+import { PersonList } from "./components/PersonList";
 import Person from './Components/ClassComponentEx/Person';
 import {Footer} from './Components/component/Footer';
 import { Header } from './Components/component/Header';

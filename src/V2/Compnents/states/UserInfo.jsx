@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-export const info = ()=>{
+
+export const UserInfo = ()=> 
+{
     // const[name, setName] = useState('kunal');
     // const [email, setEmail] = useState('kunalsapate2000');
     // const [batch, setBatch] = useState('Stark');
@@ -14,7 +16,7 @@ export const info = ()=>{
     
     const updatName = ()=>{
         //one way
-        setName("New name");
+        // setName("New name");
         // one way
         setuser({
             name: 'New name',
@@ -53,7 +55,7 @@ export const info = ()=>{
    }
    
    // you can set in object  format
-   const[days, setDays] = useState([mon,tue,wed]);
+   const[days, setDays] = useState(['mon', 'tue', 'wed']);
 
    const addClass = ()=>{
     console.log('days Before', days);
@@ -80,7 +82,7 @@ export const info = ()=>{
    )
 
 }
-
+ 
 /*
 initially
 user ---> {

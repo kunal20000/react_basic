@@ -1,9 +1,10 @@
-import { ProductList } from "./components/ProductList";
-import { ConditionalEX2 } from "./components/conditionals/ConditionalEX2";
-import { UserStatus } from "./components/conditionals/UserStatus";
-import { Bag } from "./components/props/Bag";
-import { Mobile } from "./components/props/Mobile";
-import { Shoe } from "./components/props/Shoe";
+import { ProductList } from "./Compnents/ProductList";
+import { ConditionalEX2 } from "./Compnents/Conditionals/conditionalEX2";
+import { UserStatus } from "./Compnents/Conditionals/UserStatus";
+import { Bag } from "./Compnents/Props/Bag";
+import { Mobile } from "./Compnents/Props/Mobile";
+import { Shoe } from "./Compnents/Props/Shoe";
+
 export const App = () => {
   const spec = {screen: '14cm', battery: '4000Mah', camera:"12px"}
   return (

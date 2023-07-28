@@ -6,7 +6,7 @@ export const Footer = () => {
         <footer>
             <span className={style.boldFont}>&copy; 2024 </span>
             <span className={style.square}>All rights reserved by Stark Batch</span>
-            <Contact/>
+            <Contact />
         </footer>
     )
 }
