@@ -5,6 +5,8 @@ import { sideEffect } from "./Component/sideEffect/sideEffect";
 import { AsyncEffect } from "./Component/sideEffect/AsyncEffect";
 import { Post } from "./Component/FetchDataFromAPi/Post";
 import { Albums } from "./Component/FetchDataFromAPi/Albums";
+import { CommentsWithLoader } from "./Component/FetchDataFromAPi/CommentsWithLoader";
+
 
 export const App = ()=>{
     return(
@@ -12,7 +14,8 @@ export const App = ()=>{
             {/* <SideEffectExOne />
             <AsyncEffect />
             <Post /> */}
-            <Albums />
+            {/* <Albums /> */}
+            <CommentsWithLoader />
         </div>
     )
 }
