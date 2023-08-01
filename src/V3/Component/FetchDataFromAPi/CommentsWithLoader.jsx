@@ -8,38 +8,51 @@ export const CommentsWithLoader = ()=>{
 
     //   create an error state like loading and show error message if error occurs
 
-    const fetchComments = async()=>{
+    const fetchComments = async () => {
+      setIsLoading(true);
       try{
         
         
-        const resp = await fetch("https://jsonplacholder.typicode.com/comments")
+        const resp = await fetch("https://jsonplaceholder.typicode.com/comments")
        
         const commentsData = await resp.json();
 
         setComments(commentsData);
         setIsLoading(false);
-      }catch(err)
+      } catch (err)
       {
          setIsLoading(false);
          console.log(err);
       }
-}
+};
 
-  useEffect(()=>{
+  useEffect(() => {
       fetchComments();
   }, []);
+   
+
+  console.log("rendering commentsWithLoader");
+  console.log("comments", comments);
 
     return(
         <main>
             <h3>Comments</h3>
-            {isLoading ? (<Loader />):(comments.map(({name, email, id}) => {
+            {isLoading ? (<Loader />):(comments.map(({name, email, id, body, postId}) => {
               return(
                 <section key={id} style={{ 
-                  border: "1px solid #ddd",
+                  border: "1px solid red",
                   margin: "1rem",
-                  padding: "1rem"}}>
+                  padding: "1rem"}}
+                >
+                 <p>Id: {id}</p>
+                 <hr />
+                 <p>postId: {postId}</p>
+                 <hr />
                  <p>Name: {name}</p>
+                 <hr />
                  <p>Email: {email}</p>
+                 <hr />
+                 <p>Body: {body}</p>
                 </section>
               )
             }))}
