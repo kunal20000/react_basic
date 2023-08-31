@@ -8,7 +8,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import { AppV2 } from './V4/AppV2';
 //import {App} from './V5Rounting/App';
 
-import { App1 } from "./V7_Authentication/App1";
+
+import { App } from "./V8_Optimisation/App";
+
+// import { App1 } from "./V7_Authentication/App1";
 // import { App } from './V6/App';
 // import './index.css';
 // import App from './App';
@@ -19,7 +22,7 @@ import { App1 } from "./V7_Authentication/App1";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Router>
-    <App1 />
+    <App />
   </Router>
 );
 
