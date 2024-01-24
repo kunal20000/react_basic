@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Home from "./components/Home";
 import { About } from "./components/About";
+import StateBatching from "./components/StateBatching";
+
 
 export const App = () => {
 

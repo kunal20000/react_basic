@@ -1,22 +1,22 @@
-import React,{useRef, useState} from 'react';
+import React, { memo, useRef, useState } from "react";
 
-export const About = ({contact}) => {
-    console.log("rendering About");
-const messageRef = useRef(null);
-const handleClick = ()=>{
-    const {value} = messageRef.current
+export const About = ({ contact }) => {
+  console.log("rendering About");
+  const messageRef = useRef(null);
+  const handleClick = () => {
+    const { value } = messageRef.current;
     contact(value);
-}
+  };
   return (
- <section  style={{ border: "1px solid #ddd", padding: "1rem" }}>
-    <h3>About</h3>
-    <label htmlFor="message">Message:</label><br />
-    <input type="text"  id="message" ref={messageRef}  />
-    <button onClick={handleClick}>Contact</button>
-
- </section>
+    <section style={{ border: "1px solid #ddd", padding: "1rem" }}>
+      <h3>About</h3>
+      <label htmlFor="message">Message:</label>
+      <br />
+      <input type="text" id="message" ref={messageRef} />
+      <button onClick={handleClick}>Contact</button>
+    </section>
   );
-}
+};
 
 // const a = () => {
 //     return 10
